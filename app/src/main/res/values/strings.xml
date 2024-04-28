@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Trabajo_Final</string>
+    <string name="Titulo">Trabajo Final</string>
+    <string name="tv1">Operaciones De Fracciones</string>
+    <string name="tv2">Operaciones Basicas</string>
+    <string name="tv3">Conversión de Longitud</string>
+    <string name="mi_Nombre">Jose Manuel Garcia Calixto</string>
+    <string name="titulo">Fracciones</string>
+    <string name="primer_numero">n</string>
+    <string name="segundo_numero">n</string>
+    <string name="tercer_numero">n</string>
+    <string name="cuarto_numero">n</string>
+    <string name="signo_">+</string>
+    <string name="Result">r</string>
+    <string name="segundo_Result">r</string>
+    <string name="boton1">Calcular</string>
+    <string name="boton2">Salir</string>
+
+
+    <string name="app_nme">Spinner</string>
+    <string name="operaciones">Operaciones Basicas</string>
+    <string name="numero1">Escribe el primer valor</string>
+    <string name="numero2">Escribe el segundo valor</string>
+    <string name="boton12">Calcular</string>
+    <string name="rest">0.0</string>
+    <string name="Signo">+</string>
+    <string name="sal">Salir</string>
+
+    <string name="app_naeme">Programa_conversion</string>
+    <string name="Titulos">Conversiones de Medidas</string>
+    <string name="Numero">Escribe Numero</string>
+    <string name="Bton1">Calcular</string>
+    <string name="Btn2">Salir</string>
+    <string name="Resultado">Resultado</string>
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".operaciones_de_fraccciones">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:onClick="Calcular"
+        android:text="@string/boton1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/etNumero1"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="172dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#1E75D3"
+        android:ems="10"
+        android:hint="@string/primer_numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumero3"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="172dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#1E75D3"
+        android:ems="10"
+        android:hint="@string/tercer_numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/etNumero1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumero2"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#1E75D3"
+        android:ems="10"
+        android:hint="@string/segundo_numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero1" />
+
+    <EditText
+        android:id="@+id/etNumero4"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#1E75D3"
+        android:ems="10"
+        android:hint="@string/cuarto_numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/etNumero2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tv_Signo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/signo_"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="216dp"
+        android:background="#FFFFFF"
+        android:text="="
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_Signo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrimerres"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="172dp"
+        android:background="#FFFEFE"
+        android:backgroundTint="#60C828"
+        android:text="@string/Result"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/etNumero3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRestultado_dop"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:background="#FDFDFD"
+        android:backgroundTint="#60C828"
+        android:text="@string/segundo_Result"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/etNumero4"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrimerres" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/titulo"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="39dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#60C828"
+        android:backgroundTint="#60C828"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Signo"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="39dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:background="#60C828"
+        android:backgroundTint="#60C828"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="39dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="24dp"
+        android:background="#60C828"
+        android:backgroundTint="#60C828"
+        app:layout_constraintBottom_toTopOf="@+id/tvRestultado_dop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrimerres"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#5A5454"
+        android:onClick="Salir"
+        android:text="@string/boton2"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
